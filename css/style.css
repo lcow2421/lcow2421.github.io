@@ -19,6 +19,7 @@ nav {
     background: linear-gradient(135deg, #add8e6, #ffffff);
     /* Gradient from Light Blue to White */
     padding: 10px;
+    font-size: large;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -50,13 +51,45 @@ nav a:hover {
 }
 
 
-.product {
-    background-color: #fff;
-    /* White */
+.take-tour-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.pr {
+    /* background-color: #ffffff; */
+    /* White */
+    /* border-radius: 5px;
+    display: flex;
     padding: 20px;
     margin: 20px;
     width: calc(33.33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    width: 2000px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -80,6 +113,10 @@ nav a:hover {
 
 .product p {
     color: #666;
+}
+
+#product-of-week {
+    text-align: center;
 }
 
 footer {

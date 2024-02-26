@@ -42,10 +42,13 @@ nav a:hover {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
     justify-content: center;
+    background-color: #add8e6;
+    color: #1e3d58;
 }
+
 
 .product {
     background-color: #fff;

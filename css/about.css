@@ -1,0 +1,84 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e9d2; /* Creamy White */
+}
+
+header {
+    background: linear-gradient(135deg, #73c8ff, #398bf7); /* Gradient from Light Blue to Dark Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background: linear-gradient(135deg, #add8e6, #ffffff); /* Gradient from Light Blue to White */
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #333; /* Dark Blue */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #f3e9d2; /* Creamy White */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+footer {
+    background: linear-gradient(135deg, #add8e6, #ffffff);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for mobile viewport */
+.mobile {
+    display: block; /* Show for mobile */
+}
+
+/* Styles for tablet viewport */
+@media (min-width: 768px) {
+    .tablet {
+        display: block; /* Show for tablet */
+    }
+}
+
+/* Styles for desktop viewport */
+@media (min-width: 992px) {
+    .desktop {
+        display: block; /* Show for desktop */
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: medium; /* Adjust navigation font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: small; /* Further adjust navigation font size for smaller screens */
+    }
+}

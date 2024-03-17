@@ -5,10 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
+    <header>
+        <img src="images/e-sharp_knives.png" alt="Company Banner" width="130" height="130">
+        <h1></h1>
 
+        <nav>
+            <a href="index.html">Home</a> &nbsp; &nbsp;
+            <a href="about.html">About</a> &nbsp; &nbsp;
+            <a href="team.html">Our Team</a> &nbsp; &nbsp;
+            <a href="specials.html">Specials</a> &nbsp; &nbsp;
+            <a href="training.html">Training</a> &nbsp; &nbsp;
+            <a href="media.html">Media</a> &nbsp; &nbsp;
+            <a href="faqs.html">FAQs</a> &nbsp; &nbsp;
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <center><h1>Contact Us</h1></center>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reason for Contact</legend>
+                <label for="reason">Select a reason:</label>
+                <select id="reason" name="reason">
+                    <option value="query">Query</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label>Preferred contact method:</label><br>
+                <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label><br><br>
+            </fieldset>
+
+            <button type="submit">Submit Request</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

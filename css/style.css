@@ -22,6 +22,11 @@ nav {
     padding: 10px;
     font-size: large;
     text-align: center;
+    display: flexbox;
+    /* align-items: center; */
+    column-gap: 20px;
+    border: 1px solid #333;
+    position: sticky;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -177,7 +182,13 @@ nav a:hover {
 
 /* Centering the footer and heading */
 footer {
+    background: linear-gradient(135deg, #add8e6, #ffffff);
+    color: black;
     text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #product-of-week h1 {

@@ -3,27 +3,57 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3e9d2; /* Creamy White */
+    background-color: #f3e9d2;
+    /* Creamy White */
 }
 
 header {
-    background: linear-gradient(135deg, #73c8ff, #398bf7); /* Gradient from Light Blue to Dark Blue */
+    background: linear-gradient(135deg, #73c8ff, #398bf7);
+    /* Gradient from Light Blue to Dark Blue */
     color: #fff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.company-description {
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+ol,
+li {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+}
+
 nav {
-    background: linear-gradient(135deg, #add8e6, #ffffff); /* Gradient from Light Blue to White */
+    background: linear-gradient(135deg, #add8e6, #ffffff);
+    /* Gradient from Light Blue to White */
     padding: 10px;
     font-size: large;
     text-align: center;
+    display: flexbox;
+    /* align-items: center; */
+    column-gap: 20px;
+    border: 1px solid #333;
+    position: sticky;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
-    color: #333; /* Dark Blue */
+    color: #333;
+    /* Dark Blue */
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
@@ -32,7 +62,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f3e9d2; /* Creamy White */
+    background-color: #f3e9d2;
+    /* Creamy White */
 }
 
 main {
@@ -53,32 +84,37 @@ footer {
 
 /* Styles for mobile viewport */
 .mobile {
-    display: block; /* Show for mobile */
+    display: block;
+    /* Show for mobile */
 }
 
 /* Styles for tablet viewport */
 @media (min-width: 768px) {
     .tablet {
-        display: block; /* Show for tablet */
+        display: block;
+        /* Show for tablet */
     }
 }
 
 /* Styles for desktop viewport */
 @media (min-width: 992px) {
     .desktop {
-        display: block; /* Show for desktop */
+        display: block;
+        /* Show for desktop */
     }
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     nav {
-        font-size: medium; /* Adjust navigation font size for smaller screens */
+        font-size: medium;
+        /* Adjust navigation font size for smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     nav {
-        font-size: small; /* Further adjust navigation font size for smaller screens */
+        font-size: small;
+        /* Further adjust navigation font size for smaller screens */
     }
 }

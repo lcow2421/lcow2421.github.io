@@ -20,14 +20,16 @@
             <a href="specials.html">Specials</a> &nbsp; &nbsp;
             <a href="training.html">Training</a> &nbsp; &nbsp;
             <a href="media.html">Media</a> &nbsp; &nbsp;
-            <a href="faqs.html">FAQs</a> &nbsp; &nbsp;
+            <a href="#">FAQs</a> &nbsp; &nbsp;
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <center><h1>Contact Us</h1></center>
+        <center>
+            <h1>Contact Us</h1>
+        </center>
         <form action="#" method="POST">
-            <fieldset>
+            <fieldset class="form-group">
                 <legend>Contact Information</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
@@ -42,7 +44,7 @@
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="form-group">
                 <legend>Reason for Contact</legend>
                 <label for="reason">Select a reason:</label>
                 <select id="reason" name="reason">
@@ -52,11 +54,6 @@
                     <option value="other">Other</option>
                 </select><br><br>
 
-                <label>Preferred contact method:</label><br>
-                <input type="radio" id="contact-email" name="contact-method" value="email" checked>
-                <label for="contact-email">Email</label>
-                <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                <label for="contact-phone">Phone</label><br><br>
             </fieldset>
 
             <button type="submit">Submit Request</button>
@@ -64,7 +61,10 @@
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; Copyright 2024. All Rights Reserved.<br>
+            <a href="mailto:info@esharpknives.com">Request information</a><br>
+            Prem Patel &nbsp; &nbsp; C0931793
+        </p>
     </footer>
 </body>
 

@@ -55,6 +55,12 @@ nav a:hover {
     color: #1e3d58;
 }
 
+.main-section {
+    background-color: #8b888830;
+    padding: 2%;
+    border-radius: 5px;
+}
+
 .take-tour-button {
     display: inline-block;
     padding: 10px 20px;

@@ -1,10 +1,31 @@
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f3e9d2;
     /* Creamy White */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header {
@@ -69,6 +90,8 @@ legend {
 label {
     display: block;
     margin-bottom: 5px;
+    color: #555;
+    font-size: 1.0em;
 }
 
 input,
@@ -114,9 +137,9 @@ footer {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-    form {
-        padding: 10px;
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
     }
 }
 

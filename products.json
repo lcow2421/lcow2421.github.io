@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Italian Knife",
+        "description": "Ergonomic design and razor-sharp blades.",
+        "price": 29.99,
+        "image": "im1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Japanese Knives",
+        "description": "Sleeck Cutter with sharp corners.",
+        "price": 49.99,
+        "image": "Knife1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Recycled Metal Knife",
+        "description": "Knife made from recycled materials.",
+        "price": 19.99,
+        "image": "Knife2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Eco-friendly Knives",
+        "description": "Knife made from recycled materials.",
+        "price": 39.99,
+        "image": "img2.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bread Knives",
+        "description": "Wireless Knives made for special Breads.",
+        "price": 34.99,
+        "image": "img3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Electric Handy Knives",
+        "description": "Most handy knife ever made.",
+        "price": 59.99,
+        "image": "img4.jpeg"
+    }
+]

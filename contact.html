@@ -4,67 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact Us - Eco-Gadget Hub</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
     <header>
-        <img src="images/e-sharp_knives.png" alt="Company Banner" width="130" height="130">
-        <h1></h1>
-
+        <h1>Contact Us</h1>
         <nav>
-            <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp;
-            <a href="team.html">Our Team</a> &nbsp; &nbsp;
-            <a href="specials.html">Specials</a> &nbsp; &nbsp;
-            <a href="training.html">Training</a> &nbsp; &nbsp;
-            <a href="media.html">Media</a> &nbsp; &nbsp;
-            <a href="#">FAQs</a> &nbsp; &nbsp;
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="javascript:void(0)" onclick="openCart()">Shopping Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <center>
-            <h1>Contact Us</h1>
-        </center>
-        <form action="#" method="POST">
-            <fieldset class="form-group">
-                <legend>Contact Information</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            </fieldset>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
 
-            <fieldset class="form-group">
-                <legend>Reason for Contact</legend>
-                <label for="reason">Select a reason:</label>
-                <select id="reason" name="reason">
-                    <option value="query">Query</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="complaint">Complaint</option>
-                    <option value="other">Other</option>
-                </select><br><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
 
-            </fieldset>
-
-            <button type="submit">Submit Request</button>
-            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
         </form>
-    </main>
+    </section>
+
+    <section id="contact-details">
+        <h2>Contact Details</h2>
+        <p>Email: <a href="mailto:contact@ecogadgethub.com">contact@ecogadgethub.com</a></p>
+        <p>Phone: +1-800-123-4567</p>
+        <p>Address: 123 Eco Street, Green City, GC 12345</p>
+    </section>
+
     <footer>
-        <p>&copy; Copyright 2024. All Rights Reserved.<br>
-            <a href="mailto:info@esharpknives.com">Request information</a><br>
-            Prem Patel &nbsp; &nbsp; C0931793
-        </p>
+        <p>&copy; 2024 Eco-Gadget Hub. All rights reserved.</p>
     </footer>
 </body>
 

@@ -1,54 +1,62 @@
-<!-- Student Name : Prem Chiragbhai Patel
-Student ID : C0931793 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Knives Store</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>ESharp Knives</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
-        <img src="images/html.jpg" alt="Company Banner" width="130" height="130">
-        <h1>
-
-        </h1>
-
+        <h1> ESharp Knives </h1>
         <nav>
-            <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp;
-            <a href="team.html">Our Team</a> &nbsp; &nbsp;
-            <a href="specials.html">Specials</a> &nbsp; &nbsp;
-            <a href="training.html">Training</a> &nbsp; &nbsp;
-            <a href="media.html">Media</a> &nbsp; &nbsp;
-            <a href="#">FAQs</a> &nbsp; &nbsp;
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="javascript:void(0)" onclick="openCart()">Shopping Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="container">
-        <h1> Welcome to Electric Knives Store</h1>
-        <h3>
-            <p>Experience simple cutting with the sleek, easy-to-use, and precise Electric Knife from E-Sharp
-                Knives.This sleek and dependable electric knife will make cutting much easier for you.</p>
-        </h3>
-        <h1>Our Products</h1>
-        <h3>Experience simple cutting with the sleek, easy-to-use, and precise Electric Knife from E-Sharp Knives. It is
-            the perfect cooking partner for both home cooks and pros thanks to its strong motor and convenient features.
-        </h3>
-        <a href="specials.html" class="take-tour-button">Take a Tour</a>
-    </div>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div id="product-list" class="product-list"></div>
+        <button id="show-more" onclick="fetchMoreProducts()">Show More Products</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Experience simple cutting with the sleek, easy-to-use, and precise Electric Knife from E-Sharp Knives.This
+            sleek and dependable electric knife will make cutting much easier for you.Founded in 2003, Electric Knives
+            Store has been dedicated to revolutionizing the way people cut food. Our journey began
+            with a vision to make cutting tasks simpler and more enjoyable for everyone.</p>
+        <h2></h2>
+    </section>
+
+
+    <section id="about">
+        <h2></h2>
+        <p>
+        <h2></h2>
+    </section>
     <footer>
-        <p>&copy; Copyright 2024. All Rights Reserved.<br>
-            <a href="mailto:info@esharpknives.com">Request information</a><br>
-            Prem Patel &nbsp; &nbsp; C0931793
-        </p>
+        <p>&copy; 2024 ESharp Knives. All rights reserved.</p>
     </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
